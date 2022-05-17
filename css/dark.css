@@ -1,0 +1,103 @@
+body {
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+    color: #333;
+    background: #181a1d url(../images/afgan_main.jpg) no-repeat top left fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.inner {
+    width: 78%;
+    margin: 0 auto;
+}
+
+.left_inner {
+    display: inline;
+    margin-left: 2.75%;
+}
+
+.right_inner {
+    display: inline;
+    float: right;
+    margin-right: 6.75%;
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 45px;
+
+    background: #392f1e;
+
+    color: #8b857b;
+    font-weight: bold;
+    z-index: 1488;
+}
+
+#header_inner {
+    line-height: 45px;
+}
+
+#header_home {
+    padding-left: 25px;
+    float: right;
+
+    background: url(../images/icon_home.png) no-repeat 0 50%;
+}
+
+#background {
+    position: relative;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+#container {
+    width: 80%;
+    margin: 0px auto 0px;
+}
+
+#page {
+    overflow: hidden;
+    padding: 40px;
+    background: #958b7d;
+    text-align: justify;
+}
+
+#content {
+    float: left;
+    width: 80%;
+}
+
+#sidebar {
+    color: #4d4332;
+    padding: 10px;
+    float: right;
+    width: 15%;
+}
+
+#footer {
+    height: 45px;
+
+    background: #392f1e;
+
+    color: #8b857b;
+    font-weight: bold;
+    z-index: 1488;
+}
+
+#footer_inner {
+    line-height: 45px;
+}
