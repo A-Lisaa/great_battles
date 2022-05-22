@@ -2,7 +2,7 @@ body {
     font-family: "Trebuchet MS";
     font-size: 15px;
     color: #333;
-    background: #181a1d url(../images/afgan_main.jpg) no-repeat top left fixed;
+    background: #181a1d url(../images/background.jpg) no-repeat top left fixed;
     margin: 0;
     padding: 0;
 }
@@ -17,64 +17,35 @@ a:hover {
 }
 
 .inner {
+    display: flex;
     width: 80vw;
     margin: 0 auto;
 }
 
-.left_inner {
-    display: inline;
-    margin-left: 2.5vw;
-}
-
-.right_inner {
-    display: inline;
-    float: right;
-    margin-right: 5vw;
-}
-
 #header {
-    position: sticky;
-    top: 0;
-    left: 0;
-
     min-width: 100vh;
     height: 5vh;
+    line-height: 5vh;
 
     background: #392f1e;
 
     color: #8b857b;
     font-weight: bold;
-    z-index: 1488;
-}
-
-#header_inner {
-    line-height: 5vh;
-}
-
-#header_inner * {
-    display: inline;
-}
-
-#header_to_top {
-    padding: 2vw;
+    overflow: hidden;
 }
 
 #logo {
-    margin-left: 45%;
+    margin: auto;
     font-size: 1.5em;
 }
 
 #background {
-    position: relative;
     margin: 2vh 0 2vh;
 }
 
 #container {
     width: 80vw;
-    margin: 0 auto 0;
-}
-
-#page {
+    margin: 0 auto;
     min-height: 82vh;
     overflow: hidden;
     padding: 2vh 2vw 2vh 2vw;
@@ -82,9 +53,13 @@ a:hover {
     text-align: justify;
 }
 
+#page {
+    display: flex;
+}
+
 #content {
     float: left;
-    width: 80%;
+    width: 85%;
 }
 
 #content * {
@@ -94,9 +69,10 @@ a:hover {
 
 #sidebar {
     color: #4d4332;
-    padding: 0.5vw;
     float: right;
-    width: 15%;
+    margin-left: 2%;
+    width: 13%;
+    min-width: 200px;
 }
 
 #sidebar * {
@@ -118,6 +94,34 @@ a:hover {
 
 .clickable_element:hover {
     text-decoration: underline;
+}
+
+#to_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    float: right;
+    height: 100vh;
+    width: 4vw;
+    background-color: #181a1d;
+    opacity: 0.5;
+    z-index: 9999;
+    padding-top: 5vh;
+    color: #fff;
+    transition: opacity 200ms;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: "";
+}
+
+#to_top:hover {
+    opacity: 1;
+}
+
+#to_top * {
+    margin: auto auto;
 }
 
 #footer {
